@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="header">
+            <select id="category-dropdown"></select>
+            <input type="text" id="search-bar" placeholder="Search quizzes...">
+            <button id="voice-search-btn">🎤</button>
+        </div>
+        <div class="tabs">
+            <button class="tab-button" data-difficulty="easy">Easy</button>
+            <button class="tab-button" data-difficulty="medium">Medium</button>
+            <button class="tab-button" data-difficulty="hard">Hard</button>
+        </div>
+        <div id="timer">Time: 0s</div>
+        <div id="quiz-container">
+             
+        </div>
+        <div id="calculator">
+            <input type="text" id="calc-input" readonly>
+            <div id="calc-buttons">
+                <button onclick="appendCalcInput('1')">1</button>
+                <button onclick="appendCalcInput('2')">2</button>
+                <button onclick="appendCalcInput('3')">3</button>
+                <button onclick="appendCalcInput('+')">+</button>
+                <button onclick="appendCalcInput('4')">4</button>
+                <button onclick="appendCalcInput('5')">5</button>
+                <button onclick="appendCalcInput('6')">6</button>
+                <button onclick="appendCalcInput('-')">-</button>
+                <button onclick="appendCalcInput('7')">7</button>
+                <button onclick="appendCalcInput('8')">8</button>
+                <button onclick="appendCalcInput('9')">9</button>
+                <button onclick="appendCalcInput('*')">*</button>
+                <button onclick="appendCalcInput('0')">0</button>
+                <button onclick="clearCalcInput()">C</button>
+                <button onclick="calculateResult()">=</button>
+                <button onclick="appendCalcInput('/')">/</button>
+            </div>
+        </div>
+        <div id="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
